@@ -16,26 +16,9 @@
 
 % adjust the page margins
 \usepackage[scale=0.75]{geometry}
-\setlength{\footskip}{136.00005pt}                 % depending on the amount of information in the footer, you need to change this value. comment this line out and set it to the size given in the warning
+%\setlength{\footskip}{136.00005pt}                 % depending on the amount of information in the footer, you need to change this value. comment this line out and set it to the size given in the warning
 %\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
 %\setlength{\makecvheadnamewidth}{10cm}            % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
-
-% font loading
-% for luatex and xetex, do not use inputenc and fontenc
-% see https://tex.stackexchange.com/a/496643
-\ifxetexorluatex
-  \usepackage{fontspec}
-  \usepackage{unicode-math}
-  \defaultfontfeatures{Ligatures=TeX}
-  \setmainfont{Latin Modern Roman}
-  \setsansfont{Latin Modern Sans}
-  \setmonofont{Latin Modern Mono}
-  \setmathfont{Latin Modern Math} 
-\else
-  \usepackage[utf8]{inputenc}
-  \usepackage[T1]{fontenc}
-  \usepackage{lmodern}
-\fi
 
 % document language
 \usepackage[english]{babel}  % FIXME: using spanish breaks moderncv
@@ -43,7 +26,7 @@
 % personal data
 \name{William}{Emfinger}
 %\title{Resumé title}                               % optional, remove / comment the line if not wanted
-\born{23 November 1988}                                 % optional, remove / comment the line if not wanted
+%\born{23 November 1988}                                 % optional, remove / comment the line if not wanted
 \address{4710A Illinois Ave}{Nashville, TN}{37209}
 \phone[mobile]{+1~(615)~477~3384}                   % the optional "type" of the phone can be "mobile" (default), "fixed" or "fax"
 \email{waemfinger@gmail.com}                               % optional, remove / comment the line if not wanted
@@ -56,18 +39,8 @@
 % \social[googlescholar]{googlescholarid}            % optional, remove / comment the line if not wanted
 
 \photo[64pt][0.4pt]{WilliamEmfinger}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
-\quote{Some quote}                                 % optional, remove / comment the line if not wanted
+% \quote{Some quote}                                 % optional, remove / comment the line if not wanted
 
-% bibliography adjustments (only useful if you make citations in your resume, or print a list of publications using BibTeX)
-%   to show numerical labels in the bibliography (default is to show no labels)
-%\makeatletter\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}\makeatother
-\renewcommand*{\bibliographyitemlabel}{[\arabic{enumiv}]}
-%   to redefine the bibliography heading string ("Publications")
-%\renewcommand{\refname}{Articles}
-
-% bibliography with mutiple entries
-%\usepackage{multibib}
-%\newcites{book,misc}{{Books},{Others}}
 %----------------------------------------------------------------------------------
 %            content
 %----------------------------------------------------------------------------------
@@ -76,10 +49,10 @@
 %-----       letter       ---------------------------------------------------------
 % recipient data
 \recipient{Company Recruitment team}{Company, Inc.\\123 somestreet\\some city}
-\date{January 01, 1984}
+\date{May 01, 2022}
 \opening{Dear Sir or Madam,}
-\closing{Yours faithfully,}
-\enclosure[Attached]{curriculum vit\ae{}}          % use an optional argument to use a string other than "Enclosure", or redefine \enclname
+\closing{Thank you,}
+% \enclosure[Attached]{curriculum vit\ae{}}          % use an optional argument to use a string other than "Enclosure", or redefine \enclname
 \makelettertitle
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ullamcorper neque sit amet lectus facilisis sed luctus nisl iaculis. Vivamus at neque arcu, sed tempor quam. Curabitur pharetra tincidunt tincidunt. Morbi volutpat feugiat mauris, quis tempor neque vehicula volutpat. Duis tristique justo vel massa fermentum accumsan. Mauris ante elit, feugiat vestibulum tempor eget, eleifend ac ipsum. Donec scelerisque lobortis ipsum eu vestibulum. Pellentesque vel massa at felis accumsan rhoncus.
