@@ -1,0 +1,211 @@
+% LaTeX resume using res.cls
+\documentclass[10pt,a4paper,sans]{moderncv}
+
+\usepackage{bibspacing}
+\setlength{\bibspacing}{0in}
+
+\moderncvstyle{casual}
+\moderncvcolor{blue}
+\nopagenumbers{}
+
+\usepackage[scale=0.85]{geometry}
+
+%\usepackage{multicol}
+
+% personal data
+\name{William}{Emfinger}
+%\title{Resumé title}                               % optional, remove / comment the line if not wanted
+\address{4710A Illinois Ave}{Nashville, TN}{37209}
+\phone[mobile]{+1~(615)~477~3384}                   % the optional "type" of the phone can be "mobile" (default), "fixed" or "fax"
+\email{waemfinger@gmail.com}                               % optional, remove / comment the line if not wanted
+%\homepage{www.linkedin.com/in/emfinger}                         % optional, remove / comment the line if not wanted
+\social[linkedin]{emfinger}                        % optional, remove / comment the line if not wanted
+\social[github]{finger563}                              % optional, remove / comment the line if not wanted
+%\extrainfo{additional information}                 % optional, remove / comment the line if not wanted
+\photo[64pt][0.4pt]{WilliamEmfinger}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+%\quote{Some quote}                                 % optional, remove / comment the line if not wanted
+
+% bibliography adjustments (only useful if you make citations in your resume, or print a list of publications using BibTeX)
+%   to show numerical labels in the bibliography (default is to show no labels)
+%\makeatletter\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}\makeatother
+\renewcommand*{\bibliographyitemlabel}{[\arabic{enumiv}]}
+%   to redefine the bibliography heading string ("Publications")
+%\renewcommand{\refname}{Articles}
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+%\begin{CJK*}{UTF8}{gbsn}                          % to typeset your resume in Chinese using CJK
+%-----       resume       ---------------------------------------------------------
+
+\makecvtitle
+
+  \vspace{-0.5in}
+
+  \iffalse 
+  \section{OBJECTIVE}
+  A position in the field of aerospace/electrical engineering with special interests in space exploration and research systems development. 
+  \fi
+  
+  \vspace{-0.1in}
+  \section{EDUCATION} 
+  \cventry{2011-2015}{Ph.D.}{Vanderbilt University}{Nashville, TN.}{\textit{3.91}}{Electrical Engineering}
+  \cventry{2007-2011}{B.E.}{Vanderbilt University}{Nashville, TN.}{\textit{3.66 (Electrical), 3.48 (Biomedical), 3.35 (Cumulative)}}{Biomedical Engineering and Electrical Engineering}
+
+  \vspace{-0.15in}
+  \section{PhD Dissertation}
+  \cvitem{Title}{\emph{Network Performance Analysis and Management for Cyber-Physical Systems and their Applications}}
+  \cvitem{Description}{Techniques for precise design-time analysis and run-time management of time-varying network resources in distributed CPS using min-plus calculus and convolution.}
+  
+  \vspace{-0.15in}
+  \section{RELEVANT SKILLS}
+  \cvitem{Languages}{C/C++, Python, Javascript/TypeScript, C\#, MATLAB, HLSL, Java}
+  \cvitem{Software}{Unreal Engine, Unity, EAGLE, LaTeX, Component-Based Software, Code Generation}
+  \cvitem{OSes}{Windows, Linux, Android, iOS, FreeRTOS, uC/OS-II \& III}
+  \cvitem{Hardware}{ESP32, ARM (ARM7, STM32, Cortex-M3), AVR (Mega,Tiny,USB)}
+  \cvitem{Math}{Rendering, Simulation, Image Processing,  Motion Processing}
+  
+  \vspace{-0.15in}
+  \section{EXPERIENCE} 
+  \cventry{2018--Present}{Director R\&D}{Permobil Inc.}{Lebanon, TN}{}{
+    \begin{itemize}
+    \item Developing and coordinating R\&D roadmaps and research proposals.
+    \item Machine learning on edge devices for wheelchair activity monitoring and gesture control of medical devices.
+    \item Simulation testbed for rapid training of artificial neural networks for novel environmental sensing challenges related to indoor / outdoor autonomous navigation.
+    \item Software-based solutions for medical device control using state-of-the-art COTS smartwatches.
+    \end{itemize}
+  }
+
+
+  \cventry{2017-2018}{Chief Technology Officer}{Max Mobility LLC.}{Antioch, TN}{}{
+    \begin{itemize}
+    \item Developed and integrated model-based systems engineering tools into design processes for FDA Class II medical devices.
+    \item Developed state-of-the-art autonomous powered wheelchair concept using COTS hardware leveraging Hololens,
+    Unity, ROSMOD toolsuite, and SoC edge devices.
+    \item Investigated novel motor designs and methods for power wheelchairs and manual wheelchair power assist devices.
+    \end{itemize}
+  }
+
+  %\vspace{-0.05in}
+  \cventry{2016--Present}{Adjunct Assistant Professor of Mechanical Engineering}{Vanderbilt University}{Nashville, TN}{}{
+    \begin{itemize}
+    \item Faculty advisor to the Vanderbilt Aerospace Design Lab,
+      focusing on systems engineering, physical dynamics modeling and
+      control, model-based engineering, and ground-based hardware in
+      the loop test equipment.
+    \item Small satellite engineering and rocket-based in-flight
+      control systems
+    \end{itemize}
+  }
+
+  %\vspace{-0.05in}
+  \cventry{2016--2017}{R\&D Engineer}{Max Mobility LLC.}{Antioch, TN}{}{
+    \begin{itemize}
+    \item Coordinated software design, modeling, development, testing,
+      and production for SmartDrive MX2+ and the PushTracker
+      smartwatch. Included wireless reprogramming, inertial
+      measurement, motor control, power management and display code.
+    \item Developed and integrated collaborative, model-based software
+      engineering into R\&D team workflow.
+    \item Developed modeling language and code generators which
+      produced target-executable code.
+    \end{itemize}
+  }
+
+  %\vspace{-0.05in}
+  \cventry{2015--2016}{Post-Doctoral Researcher}{Vanderbilt University}{Nashville, TN}{}{
+    \begin{itemize}
+    \item Developed Hardware-in-the-Loop testbed (RCPS) and integrated it with distributed coordinated simulation platforms for testing and validation of resilience and security in distributed CPS.
+    \item Integrated ROSMOD toolsuite into web-based, collaborative modeling platform (WebGME) to become integrated development environment for developing, deploying, and managing distributed CPS applications on RCPS testbed.
+    \item Developed power-system modeling toolsuite with simulation backend for testing transactive engery systems and their designs (using Gridlab-D)
+    \end{itemize}
+  }  
+
+  %\vspace{-0.05in}
+  \cventry{2011--2015}{Graduate Research Assistant}{Vanderbilt University}{Nashville, TN}{}{
+    \begin{itemize}  
+    \item Developed component model for Robot Operating System (ROS), with associated graphical model-driven development, analysis, deployment, and monitoring tool, ROSMOD
+    \item Developed new methods for design-time network analysis and run-time network enforcement of applications in distributed systems with time-varying networks
+    \item Worked on DARPA F6 / DREMS Fractionated Satellite Project helping develop secure OS, Middleware, Analysis techniques, and Development \& Deployment infrastructure.
+    \item Published and presented research in RTSS@Work 2013 workshop, RTAS CyPhy 2014 Workshop, ISORC 2015, and RSP 2015
+    \end{itemize}
+  }
+
+  \iffalse
+  %\vspace{-0.05in}
+  \cventry{2009-2011}{Senior Electrical Engineer}{Max Mobility LLC.}{Antioch, TN}{}{
+    \begin{itemize}  
+    \item Worked 50+ hr/wk during summer, 30+ hr/wk \textbf{during school} while taking 18 hours of undergraduate classes
+    %\item Designed and fabricated PCBs using \textit{CadSoft EAGLE}
+    \item Developed algorithms to classify IMU \& propulsion data from Max Mobility's BioMobility Lab
+    \item Designed, fabricated, and programmed IMU to detect pushes on manual wheelchair, \textit{PushTracker}
+    %\item Presented work at rehabilitation and assistive technology conference (RESNA), in 2009, 2010, and 2011
+    \item Transitioned \textit{PushTracker} into autonomous power assist device for manual wheelchairs, \textit{SmartDrive}
+    %\item Designed and programmed the main control board and interface for wheelchair accessible treadmill, \textit{PushOn Treadmill} using touchscreen
+    %\item Designed, fabricated, and programmed wireless data collection triggering system \textit{Trigger Finger} to coordinate data collection between devices in BioMobility Lab
+    \end{itemize}
+  }
+  \fi
+  
+  \vspace{-0.15in}
+  \section{AWARDS}
+  \cventry{2016}{AIAA Special Award}{}{}{}{Outstanding mentorship of the 2014-2015 Vanderbilt Student Launch Team}
+  \cventry{2015}{First Place NASA Student Launch Challenge}{}{}{}{Martian sample recovery system: \textbf{A}utonomous \textbf{G}round \textbf{S}upport \textbf{E}quipment}
+  \cventry{2014}{First Place NASA Student Launch Challenge}{}{}{}{\textit{Star}CRAFT (rocket + ramjet + landing-site hazard detection) System}
+  \cventry{2011}{RESNA Student Design Competition Finalist (Highest award)}{}{}{}{\textit{PushTracker} activity monitor and feedback for manual wheelchair users}
+  
+  \vspace{-0.15in}
+  \section{PROJECTS}
+  %\footnote[1]{Projects are hosted on github, links are in my linkedin profile}
+  \cventry{2014-Present}{ROSMOD}{Resarch Project}{}{}{Collaborative toolsuite for developing, analyzing, deploying, and monitoring component-based ROS applications on distributed systems.  Used to win NASA competition in 2015.  Available at \textit{rosmod.rcps.isis.vanderbilt.edu}.}
+  \cventry{2013-2015}{Vanderbilt Aerospace Design Lab}{Club Project}{}{}{
+    \begin{itemize}
+    \item (2013-2014) design and implement the landing-site hazard detection system for the \textit{Star}CRAFT rocket: system design, image processing, data transmission and collection
+    \item (2014-2015) design and implement the autonomous Martian sample detection and recovery system: system design, PCB design and manufacturing, ROSMOD component code, image processing.
+  \end{itemize}}
+  \iffalse
+  \cventry{2014-2016}{Multi-Domain Systems Simulation and Rendering Engine}{Personal Project}{}{}{Goal: simulate in real-time multiple interacting physical systems at multiple scales using cutting edge GPU and GPGPU computing techniques, focusing on aerospace craft in the solar system and planetary atmospheres.}
+  \fi
+  \cventry{2013}{Software Rendering Engine}{Class Project}{}{}{Networked first person video game utilizing a custom software rendering engine that I designed and implemented.}
+  \cventry{2010}{Wearable Transparent HUD}{Class Project}{}{}{Developed transparent wearable HUD showing user's position/orientation and direction/distance to goal location.}
+  
+  \vspace{-0.15in}
+  \nocite{*}
+  \bibliographystyle{plain}
+  \bibliography{william_emfinger_publications}
+
+  \vspace{-0.15in}
+  \iffalse
+  \section{RELEVANT \\ COURSEWORK} 
+  \begin{multicols}{2} 
+    \begin{itemize} \itemsep -2pt
+    \item Systems Theory
+    \item Hybrid \& Embedded Systems
+    \item Adv Real-Time Systems
+    \item Adv Digital Electronics
+    \item Embedded Software \& Systems
+    \item Adv Operating Systems
+    \item Digital Systems Architecture
+    \item Random Processes
+    \item Computer Networks
+    \item Detection \& Estimation Theory
+    \item Graph Theory
+    \item Electromagnetics
+    \item Electronics I \& II
+    \item FPGA Design
+    \item Microcontrollers
+    \item Embedded Systems
+    \item Integrated Circuits Technology and Fabrication
+    \item Modeling Embedded Systems
+    \item BioMEMS (\textbf{M}icro\textbf{E}lectro\textbf{M}achined\textbf{S}ystems)
+    \item Biomedical Instrumentation
+    \item Physiological Transport Phenomena
+    \end{itemize}
+  \end{multicols}
+  \fi
+\end{document}

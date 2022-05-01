@@ -14,3 +14,9 @@ template.pdf
 
 # release tarballs
 moderncv-*.tar.gz
+
+# william_emfinger_resume.tex output
+william_emfinger_resume.pdf
+
+# not sure what this is... ?
+.auctex-auto/
