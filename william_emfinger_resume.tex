@@ -55,7 +55,7 @@
   \vspace{-0.1in}
   \section{EDUCATION} 
   \cventry{2011-2015}{Ph.D.}{Vanderbilt University}{Nashville, TN.}{\textit{3.91}}{Electrical Engineering}
-  \cventry{2007-2011}{B.E.}{Vanderbilt University}{Nashville, TN.}{\textit{3.66 (Electrical), 3.48 (Biomedical), 3.35 (Cumulative)}}{Biomedical Engineering and Electrical Engineering}
+  \cventry{2007-2011}{B.E.}{Vanderbilt University}{Nashville, TN.}{\textit{3.66 (Electrical), 3.48 (Biomedical), 3.35 (Cumulative)}}{Electrical Engineering and Biomedical Engineering}
 
   \vspace{-0.15in}
   \section{PhD Dissertation}
@@ -65,35 +65,37 @@
   \vspace{-0.15in}
   \section{RELEVANT SKILLS}
   \cvitem{Languages}{C/C++, Python, Javascript/TypeScript, C\#, MATLAB, HLSL, Java}
-  \cvitem{Software}{Unreal Engine, Unity, EAGLE, LaTeX, Component-Based Software, Code Generation}
-  \cvitem{OSes}{Windows, Linux, Android, iOS, FreeRTOS, uC/OS-II \& III}
-  \cvitem{Hardware}{ESP32, ARM (ARM7, STM32, Cortex-M3), AVR (Mega,Tiny,USB)}
+  \cvitem{Software}{Unreal Engine, Unity, EAGLE, LaTeX, WebGME, Component-Based Software, Code Generation}
+  \cvitem{OSes}{FreeRTOS, Linux, Android, iOS, Windows, uC/OS-II \& III}
+  \cvitem{Hardware}{ESP32 (ESP-IDF), ARM (ARM7, STM32, Cortex-M3), AVR (Mega,Tiny,USB)}
   \cvitem{Math}{Rendering, Simulation, Image Processing,  Motion Processing}
   
   \vspace{-0.15in}
   \section{EXPERIENCE} 
-  \cventry{2018--Present}{Director R\&D}{Permobil Inc.}{Lebanon, TN}{}{
+  \cventry{2018--2022}{Director R\&D}{Permobil Inc.}{Lebanon, TN}{}{
     \begin{itemize}
-      \item Developing and coordinating R\&D roadmaps and research proposals.
-      \item Machine learning on edge devices for wheelchair activity monitoring
-            and gesture control of medical devices leveraging low-cost RGB
-            cameras, NVidia Jetson, Monocular Depth Prediction, Optical Flow
-            Prediciton, and Learned Visual Odometry for ML-based SLAM solution.
-      \item Unreal Engine-based simulation and data collection testbed for rapid
-            training of artificial neural networks for novel environmental
-            sensing challenges related to indoor / outdoor autonomous
-            navigation.
-      \item Design of next-generation software and electronics platform for
-            connected manual, power assist, and powered wheelchair systems.
-      \item Software-based solutions for medical device control using WearOS and
-            WatchOS smartwatches.
+      \item Developing and coordinating R\&D roadmaps and technology development
+            for FDA Class II medical devices.
+      \item Machine learning on edge devices for autonomous powered wheelchair
+            navigation leveraging low-cost RGB cameras, NVidia Jetson, Monocular
+            Depth Prediction, Optical Flow Prediciton, and Learned Visual
+            Odometry for ML-based SLAM solution.
+      \item In-house Unreal Engine-based simulation and data collection testbed
+            to rapidly train artificial neural networks for intelligent sensing
+            in indoor / outdoor autonomous navigation for powered wheelchairs.
+      \item Design and implementation of next-generation software and
+            electronics platform for power assist and powered wheelchair
+            systems.
+      \item Wireless data collection and neural network-based gesture control of
+            medical devices from WearOS and WatchOS.
     \end{itemize}
   }
 
 
   \cventry{2017-2018}{Chief Technology Officer}{Max Mobility LLC.}{Antioch, TN}{}{
     \begin{itemize}
-      \item Developed technology strategy for product and service roadmaps
+      \item Developed technology strategy for a modular power assist device \&
+            powered wheelchair ecosystem.
       \item Developed and managed university partnerships and funded graduate
             student research into novel medical devices.
       \item Developed state-of-the-art autonomous powered wheelchair add-on
@@ -187,28 +189,31 @@
   }
   \fi
   
-  \vspace{-0.15in}
-  \section{AWARDS}
-  \cventry{2016}{AIAA Special Award}{}{}{}{Outstanding mentorship of the 2014-2015 Vanderbilt Student Launch Team}
-  \cventry{2015}{First Place NASA Student Launch Challenge}{}{}{}{Martian sample recovery system: \textbf{A}utonomous \textbf{G}round \textbf{S}upport \textbf{E}quipment}
-  \cventry{2014}{First Place NASA Student Launch Challenge}{}{}{}{\textit{Star}CRAFT (rocket + ramjet + landing-site hazard detection) System}
-  \cventry{2011}{RESNA Student Design Competition Finalist (Highest award)}{}{}{}{\textit{PushTracker} activity monitor and feedback for manual wheelchair users}
-  
+
   \vspace{-0.15in}
   \section{PROJECTS}
   %\footnote[1]{Projects are hosted on github, links are in my linkedin profile}
-  \cventry{2014-Present}{ROSMOD}{Resarch Project}{}{}{Collaborative toolsuite for developing, analyzing, deploying, and monitoring component-based ROS applications on distributed systems.  Used to win NASA competition in 2015.  Available at \textit{rosmod.rcps.isis.vanderbilt.edu}.}
+  \cventry{2016-Present}{WebGME HFSM}{Open Source Model-Based Software Design Toolsuite}{}{}{Collaborative toolsuite for modeling, simulating, and generating executable c++ code using the hierarchical finite state machine (HFSM) formalism.  Used to develop SmartDrive MX2+ and next-generation power assist devices.  Available at \textit{github.com/finger563/webgme-hfsm}.}
+  \cventry{2016-2022}{SmartDrive MX2+}{FDA Class II Power Assist Device for Manual Wheelchairs}{}{}{Combining embedded c++, lithium ion battery, brushless motor, omniwheel, bluetooth remote control, WatchOS \& WearOS smartwatch control, data collection to the cloud, and over the air firmware updates.  Available at \textit{https://www.permobil.com/en-us/products/power-assist/smartdrive-mx2}.}
+  \cventry{2014-Present}{ROSMOD}{Open Source Model-Based Robotics Toolsuite}{}{}{Collaborative toolsuite for developing, analyzing, deploying, and monitoring component-based ROS applications on distributed systems.  Used to win NASA competition in 2015.  Available at \textit{github.com/rosmod/webgme-rosmod}.}
+  \iffalse
   \cventry{2013-2015}{Vanderbilt Aerospace Design Lab}{Club Project}{}{}{
     \begin{itemize}
     \item (2013-2014) design and implement the landing-site hazard detection system for the \textit{Star}CRAFT rocket: system design, image processing, data transmission and collection
     \item (2014-2015) design and implement the autonomous Martian sample detection and recovery system: system design, PCB design and manufacturing, ROSMOD component code, image processing.
   \end{itemize}}
-  \iffalse
   \cventry{2014-2016}{Multi-Domain Systems Simulation and Rendering Engine}{Personal Project}{}{}{Goal: simulate in real-time multiple interacting physical systems at multiple scales using cutting edge GPU and GPGPU computing techniques, focusing on aerospace craft in the solar system and planetary atmospheres.}
-  \fi
-  \cventry{2013}{Software Rendering Engine}{Class Project}{}{}{Networked first person video game utilizing a custom software rendering engine that I designed and implemented.}
+    \cventry{2013}{Software Rendering Engine}{Class Project}{}{}{Networked first person video game utilizing a custom software rendering engine that I designed and implemented.}
   \cventry{2010}{Wearable Transparent HUD}{Class Project}{}{}{Developed transparent wearable HUD showing user's position/orientation and direction/distance to goal location.}
-  
+  \fi
+
+\vspace{-0.15in}
+  \section{AWARDS}
+  \cventry{2016}{AIAA Special Award}{}{}{}{Outstanding mentorship of the 2014-2015 Vanderbilt Student Launch Team}
+  \cventry{2015}{First Place NASA Student Launch Challenge}{}{}{}{Martian sample recovery system: \textbf{A}utonomous \textbf{G}round \textbf{S}upport \textbf{E}quipment}
+  \cventry{2014}{First Place NASA Student Launch Challenge}{}{}{}{\textit{Star}CRAFT (rocket + ramjet + landing-site hazard detection) System}
+  \cventry{2011}{RESNA Student Design Competition Finalist (Highest award)}{}{}{}{\textit{PushTracker} activity monitor and feedback for manual wheelchair users}
+
   \vspace{-0.15in}
   \nocite{*}
   \bibliographystyle{plain}
