@@ -1,6 +1,9 @@
 % LaTeX resume using res.cls
 \documentclass[10pt,a4paper,sans]{moderncv}
 
+% Needed for the \ul (underline) command which allows line-wrapping
+\usepackage{soul}
+
 \usepackage{bibspacing}
 \setlength{\bibspacing}{0in}
 
@@ -72,22 +75,71 @@
   
   \vspace{-0.15in}
   \section{EXPERIENCE} 
-  \cventry{2022--Present}{Systems Engineer}{Backbone Labs Inc.}{Atherton, CA}{}{
+  \cventry{2025--Present}{Chief Technology Officer}{Assistive Technology Development Inc.}{Orange County, CA}{}{
     \begin{itemize}
-      \item Defined, developed, and managed next-generation firmware
-            architecture for Backbone Pro (9/10 IGN). Managed firmware design
-            and development, delivering $>= 1$ FW release per week for rapid
-            deployment and testing in 12 month development cycle.
+      \item ATDev Principle Investigator for
+            \href{https://www.prnewswire.com/news-releases/atdev-joins-41-million-arpa-h-initiative-to-build-the-future-of-robotic-mobility-and-independence-302606603.html}{\ul{\$41.5
+            Million ARPA-H open-source Robotic Assistive Mobility and
+            Manipulation Platform (RAMMP)}}, leading the architecture and
+            development for 1) Assistive Technology Operating System (ATOS) and
+            2) Robotic Assistive Mobility and Manipulation Simulation (RAMMS)
+      \item Directing and developing high-performance interdisciplinary software
+            and robotics engineering team to develop next-generation medical and
+            assistive robotic technologies.
+      \item Architecture, design, and development of next-generation
+            \href{https://assistivetech.dev/reflex}{\ul{Reflex}}
+            telehealth-enabled rehabilitation device for optimal orthopedic knee
+            rehabilitation.
+    \end{itemize}
+  }
+
+  \cventry{2016--Present}{Adjunct Assistant Professor of Mechanical Engineering}{Vanderbilt University}{Nashville, TN}{}{
+    \begin{itemize}
+      \item Faculty advisor to the Vanderbilt Aerospace Design Lab, focusing on
+            systems engineering, physical dynamics modeling and control,
+            model-based engineering, and ground-based hardware in the loop test
+            equipment.
+      \item Taught class on Satellite-based Remote Sensing which covered
+            hyperspectral imaging and neural-network image segmentation focusing
+            on climate and society challenge problems. Also included hands-on
+            hyperspectral imaging projects leveraging Microsoft Hololens
+            Mixed-Reality headset.
+      \item Guest lecturer in both undergraduate and graduate electrical
+            engineering and computer science classes related to embedded and
+            cyber-physical systems.
+    \end{itemize}
+  }
+
+  \cventry{2022--2025}{Systems Engineer}{Backbone Labs Inc.}{Atherton, CA}{}{
+    \begin{itemize}
+      \item Defined, developed, and managed next-generation electrical and
+            firmware architecture for
+            \href{https://backbone.com/pages/pro}{\ul{Backbone Pro}}
+            (\href{https://www.ign.com/articles/backbone-pro-review}{\ul{9/10
+            IGN}}). Optimized electical and firmware design to deliver
+            best-in-class wired and wireless latency simultaneously with battery
+            life - enabling 25\% reduction in latency, 50\% reduction in battery
+            size / weight, and 600\% improvement in battery life compared with
+            some first party controllers, reaching over 40 hours of active,
+            competitive BLE gameplay with 18ms avg. / 5ms std. dev. latency.
+      \item Managed firmware design and development, delivering $>= 1$ FW
+            release per week for rapid deployment and testing in 12 month
+            development cycle.
+      \item Architected and implemented shared firmware codebase across 6
+            different product lines spanning mass production and R\&D, targeting
+            millions of devices.
       \item Developed and managed cross-platform firmware architecture to allow
             compilation of firmware code into python-bound shared objects for
             use in custom-developed python tools used by firmware, user
-            research, and production teams.
-      \item Developing next-generation electronics and software architectures
-            for cross-platform gaming experiences including BLE, WiFi, NFC,
-            ESP-NOW (802.11), and WiFi Direct.
+            research, and production/factory contract manufacturing.
+      \item Designed and developed next-generation electronics and software
+            architectures for cross-platform gaming experiences including BLE,
+            WiFi, NFC, ESP-NOW (802.11), and WiFi Direct.
+    \iffalse
       \item Systems architecture, R\&D of next-generation wireless
             communications and power transmissions technologies, firmware
             development, electrical design and development
+    \fi
     \end{itemize}
   }
 
@@ -110,7 +162,6 @@
     \end{itemize}
   }
 
-
   \cventry{2017-2018}{Chief Technology Officer}{Max Mobility LLC.}{Antioch, TN}{}{
     \begin{itemize}
       \item Developed technology strategy for a modular power assist device \&
@@ -123,21 +174,6 @@
       \item Investigated novel motor designs such as spherical induction motors
             and methods for power wheelchairs and manual wheelchair power assist
             devices.
-    \end{itemize}
-  }
-
-  %\vspace{-0.05in}
-  \cventry{2016--Present}{Adjunct Assistant Professor of Mechanical Engineering}{Vanderbilt University}{Nashville, TN}{}{
-    \begin{itemize}
-      \item Faculty advisor to the Vanderbilt Aerospace Design Lab, focusing on
-            systems engineering, physical dynamics modeling and control,
-            model-based engineering, and ground-based hardware in the loop test
-            equipment.
-      \iffalse
-      \item Taught class Satellite-based Remote Sensing which covered
-            hyperspectral imaging and neural-network image segmentation focusing
-            on climate and society challenge problems.
-      \fi
     \end{itemize}
   }
 
